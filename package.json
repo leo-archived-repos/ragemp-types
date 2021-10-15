@@ -1,7 +1,7 @@
 {
-	"name": "@ragemp/types-client",
+	"name": "@ragemp/types-shared",
 	"version": "1.0.0",
-	"description": "Types definitions for RAGE:MP client-side module",
+	"description": "Shared types definitions for RAGE:MP server/client module",
 	"main": "index.d.ts",
 	"files": [
 		"index.d.ts"

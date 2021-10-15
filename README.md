@@ -1,1 +1,1 @@
-# types-client
+# types-shared
