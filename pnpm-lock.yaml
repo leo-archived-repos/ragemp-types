@@ -1,10 +1,17 @@
 lockfileVersion: 5.3
 
-specifiers:
-  prettier: ^2.4.1
+importers:
 
-devDependencies:
-  prettier: 2.4.1
+  .:
+    specifiers:
+      '@ragemp/types-shared': github:rysemultiplayer/ragemp-types#types-shared
+      prettier: ^2.4.1
+    devDependencies:
+      '@ragemp/types-shared': github.com/rysemultiplayer/ragemp-types/d74adebfa1c3440a27cd2b9f8e7a66804e8bb5c1
+      prettier: 2.4.1
+
+  packages/server:
+    specifiers: {}
 
 packages:
 
@@ -12,4 +19,10 @@ packages:
     resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    dev: true
+
+  github.com/rysemultiplayer/ragemp-types/d74adebfa1c3440a27cd2b9f8e7a66804e8bb5c1:
+    resolution: {commit: d74adebfa1c3440a27cd2b9f8e7a66804e8bb5c1, repo: git+ssh://git@github.com/rysemultiplayer/ragemp-types.git, type: git}
+    name: '@ragemp/types-shared'
+    version: 1.0.0
     dev: true

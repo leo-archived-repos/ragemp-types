@@ -17,6 +17,7 @@
 	},
 	"homepage": "https://github.com/rysemultiplayer/ragemp-types#readme",
 	"devDependencies": {
+		"@ragemp/types-shared": "github:rysemultiplayer/ragemp-types#types-shared",
 		"prettier": "^2.4.1"
 	},
 	"prettier": {

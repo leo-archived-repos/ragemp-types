@@ -66,6 +66,8 @@ jobs:
           rsync -vaI README.md out/
           rsync -vaI LICENSE out/
           rsync -vaI index.d.ts out/
+          rsync -vaI vehicle_hashes.d.ts out/
+          rsync -vaI weapon_hashes.d.ts out/
 
           echo -e "\n# Commit and push"
           cd out
