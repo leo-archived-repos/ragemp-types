@@ -2,10 +2,6 @@
 	"name": "ragemp-types",
 	"version": "1.0.0",
 	"description": "Types definitions for RAGE:MP",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/rysemultiplayer/ragemp-types.git"

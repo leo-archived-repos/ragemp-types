@@ -65,6 +65,8 @@ mp.events.add('gobrr', () => {
 
 ## Using `{ named }` import
 
+#### Input:
+
 ```ts
 import { events, PlayerMp } from 'rage-server';
 
