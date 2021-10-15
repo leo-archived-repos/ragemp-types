@@ -1,2 +1,1 @@
-# ragemp-types
-Types definitions for RAGE:MP
+# types-server
