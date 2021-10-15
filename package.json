@@ -1,0 +1,52 @@
+{
+	"name": "ragemp-types",
+	"version": "1.0.0",
+	"description": "Types definitions for RAGE:MP",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rysemultiplayer/ragemp-types.git"
+	},
+	"author": "LeonardSSH <leonardssh22@gmail.com> (https://leonard.sh)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rysemultiplayer/ragemp-types/issues"
+	},
+	"homepage": "https://github.com/rysemultiplayer/ragemp-types#readme",
+	"devDependencies": {
+		"prettier": "^2.4.1"
+	},
+	"prettier": {
+		"$schema": "http://json.schemastore.org/prettierrc",
+		"endOfLine": "lf",
+		"printWidth": 150,
+		"quoteProps": "as-needed",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": "*.yml",
+				"options": {
+					"tabWidth": 2,
+					"useTabs": false
+				}
+			}
+		]
+	},
+	"keywords": [
+		"gta5",
+		"gta",
+		"ragemp",
+		"rage",
+		"ragemp-ts",
+		"ragemp-dts",
+		"ragemp-types",
+		"typescript"
+	]
+}
