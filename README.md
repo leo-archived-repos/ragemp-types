@@ -30,6 +30,29 @@ yarn add -D github:rysemultiplayer/ragemp-types#types-client
 pnpm add -D github:rysemultiplayer/ragemp-types#types-client
 ```
 
+`SHARED-MODULE`
+
+```bash
+# With npm
+npm i --save-dev github:rysemultiplayer/ragemp-types#types-shared
+
+# With yarn
+yarn add -D github:rysemultiplayer/ragemp-types#types-shared
+
+# With pnpm
+pnpm add -D github:rysemultiplayer/ragemp-types#types-shared
+```
+
+> To make these types detectable, you've to add `typeRoots` property below to your project's `tsconfig.json`
+
+```json
+{
+	"compilerOptions": {
+		"typeRoots": ["./node_modules/@types", "./node_modules/@ragemp"]
+	}
+}
+```
+
 ## 🤓 Usage
 
 🔴 **These types need to be built using the [rollup-plugin-external-globals](https://www.npmjs.com/package/rollup-plugin-external-globals)**

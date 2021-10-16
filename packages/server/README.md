@@ -4,6 +4,8 @@ Remember to 🌟 this Github if you 💖 it.
 
 ## 📥 Installation
 
+#### `SERVER-SIDE`
+
 ```bash
 # With npm
 npm i --save-dev github:rysemultiplayer/ragemp-types#types-server
@@ -13,6 +15,29 @@ yarn add -D github:rysemultiplayer/ragemp-types#types-server
 
 # With pnpm
 pnpm add -D github:rysemultiplayer/ragemp-types#types-server
+```
+
+`SHARED-MODULE`
+
+```bash
+# With npm
+npm i --save-dev github:rysemultiplayer/ragemp-types#types-shared
+
+# With yarn
+yarn add -D github:rysemultiplayer/ragemp-types#types-shared
+
+# With pnpm
+pnpm add -D github:rysemultiplayer/ragemp-types#types-shared
+```
+
+> To make these types detectable, you've to add `typeRoots` property below to your project's `tsconfig.json`
+
+```json
+{
+	"compilerOptions": {
+		"typeRoots": ["./node_modules/@types", "./node_modules/@ragemp"]
+	}
+}
 ```
 
 ## 🤓 Usage
@@ -86,6 +111,16 @@ mp.events.add('gobrr', (player) => {
 	// your code
 });
 ```
+
+## 👨‍💻 Contributing
+
+To contribute to this repository, feel free to create a new fork of the repository and submit a pull request.
+
+1. Fork / Clone and select the `main` branch.
+2. Create a new branch in your fork.
+3. Make your changes.
+4. Commit your changes, and push them.
+5. Submit a Pull Request [here](https://github.com/rysemultiplayer/ragemp-types/pulls)!
 
 ## 🎉 Thanks
 
