@@ -542,7 +542,7 @@ declare module 'rage-server' {
 		 *
 		 * @param weapon Weapon Hash
 		 */
-		getWeaponAmmo(weapon: WeaponHash | shared.HashOrString): number;
+		getWeaponAmmo(weapon: shared.WeaponHash | shared.HashOrString): number;
 
 		/**
 		 * This function gives a weapon(see) for the player.
@@ -550,7 +550,7 @@ declare module 'rage-server' {
 		 * @param weaponHash Weapon Hash
 		 * @param ammo Ammo
 		 */
-		giveWeapon(weaponHash: WeaponHash | shared.HashOrString | WeaponHash[] | shared.HashOrString[], ammo: number): void;
+		giveWeapon(weaponHash: shared.WeaponHash | shared.HashOrString | shared.WeaponHash[] | shared.HashOrString[], ammo: number): void;
 
 		// TODO: wiki
 		hasPendingProc(eventProcName: string): void;
@@ -641,7 +641,7 @@ declare module 'rage-server' {
 		 *
 		 * @param weaponHash [Weapon Hash](https://wiki.rage.mp/index.php?title=Weapons)
 		 */
-		removeWeapon(weaponHash: WeaponHash | shared.HashOrString): void;
+		removeWeapon(weaponHash: shared.WeaponHash | shared.HashOrString): void;
 
 		/**
 		 * Removes all weapons from the player
@@ -741,7 +741,7 @@ declare module 'rage-server' {
 		 * @param weapon Weapon Hash
 		 * @param ammo Ammo
 		 */
-		setWeaponAmmo(weaponHash: WeaponHash | shared.HashOrString, ammo: number): void;
+		setWeaponAmmo(weaponHash: shared.WeaponHash | shared.HashOrString, ammo: number): void;
 
 		/**
 		 * This function spawn a player.
