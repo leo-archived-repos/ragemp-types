@@ -4,7 +4,7 @@ Remember to 🌟 this Github if you 💖 it.
 
 ## 📥 Installation
 
-```c++
+```bash
 # With npm
 npm i --save-dev github:rysemultiplayer/ragemp-types#types-server
 
@@ -21,6 +21,10 @@ pnpm add -D github:rysemultiplayer/ragemp-types#types-server
 
 ```js
 // rollup.config.js
+
+// your imports
+import externalGlobalsPlugin from 'rollup-plugin-external-globals';
+
 export default [
 	{
 		// your config
