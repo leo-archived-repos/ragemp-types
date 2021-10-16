@@ -1,45 +1,8 @@
 /// <reference types="@ragemp/types-shared"/>
+/// <reference path="enums.d.ts"/>
 
 declare module 'rage-server' {
 	import * as shared from 'rage-shared';
-
-	export const enum PlayerActions {
-		CLIMBING = 'climbing',
-		IN_COVER = 'in_cover',
-		AIMING_FROM_COVER = 'aiming_from_cover',
-		DIVING = 'diving',
-		ENTERING_VEHICLE = 'entering_vehicle',
-		EXITING_VEHICLE = 'exiting_vehicle',
-		JUMPING = 'jumping',
-		MOVING = 'moving',
-		MOVING_AIMING = 'moving_aiming',
-		MOVING_RELOADING = 'moving_reloading',
-		PARACHUTING = 'parachuting',
-		RAGDOLL = 'ragdoll',
-		AIMING = 'aiming',
-		RELOADING = 'reloading',
-		STOPPED = 'stopped'
-	}
-
-	export const enum VehicleSeat {
-		DRIVER,
-		PASSENGER_1,
-		PASSENGER_2,
-		PASSENGER_3,
-		PASSENGER_4,
-		PASSENGER_5,
-		PASSENGER_6,
-		PASSENGER_7,
-		PASSENGER_8,
-		PASSENGER_9,
-		PASSENGER_10,
-		PASSENGER_11,
-		PASSENGER_12,
-		PASSENGER_13,
-		PASSENGER_14,
-		PASSENGER_15,
-		PASSENGER_16
-	}
 
 	export type PlayerWeaponMp = {
 		current: number;
@@ -47,77 +10,6 @@ declare module 'rage-server' {
 		hash: string;
 		name: string;
 	};
-
-	export const enum VehicleNumberPlateType {
-		BLUE_WHITE = 0,
-		YELLOW_BLACK = 1,
-		YELLOW_BLUE = 2,
-		BLUE_WHITE2 = 3,
-		BLUE_WHITE3 = 4,
-		YANKTON = 5
-	}
-
-	export const enum ColshapeType {
-		CIRCLE = 'circle',
-		CUBOID = 'cuboid',
-		POLYGON = 'polygon',
-		RECTANGLE = 'rectangle',
-		SPHERE = 'sphere',
-		TUBE = 'tube'
-	}
-
-	export const enum Weather {
-		BLIZZARD = 'BLIZZARD',
-		CLEAR = 'CLEAR',
-		CLEARING = 'CLEARING',
-		CLOUDS = 'CLOUDS',
-		EXTRA_SUNNY = 'EXTRASUNNY',
-		FOGGY = 'FOGGY',
-		OVERCAST = 'OVERCAST',
-		RAIN = 'RAIN',
-		SMOG = 'SMOG',
-		SNOW_LIGHT = 'SNOWLIGHT',
-		THUNDER = 'THUNDER',
-		XMAS = 'XMAS'
-	}
-
-	export const enum ClothesComponent {
-		HEAD = 0,
-		BEARD = 1,
-		HAIR = 2,
-		TORSO = 3,
-		LEGS = 4,
-		HANDS = 5,
-		FOOT = 6,
-		NONE = 7,
-		ACCESSORIES_1 = 8,
-		ACCESSORIES_2 = 9,
-		MASK = 10,
-		DECALS = 11,
-		AUXILIARY = 12
-	}
-
-	export const enum HeadOverlay {
-		BLEMISHES = 0,
-		FACIAL_HAIR = 1,
-		EYEBROWS = 2,
-		AGEING = 3,
-		MAKEUP = 4,
-		BLUSH = 5,
-		COMPLEXION = 6,
-		SUN_DAMAGE = 7,
-		LIPSTICK = 8,
-		FRECKLES = 9,
-		CHEST_HAIR = 10,
-		BODY_BLEMISHES = 11,
-		ADD_BODY_BLEMISHES = 12
-	}
-
-	export const enum PlayerProp {
-		HELMET = 0,
-		GLASSES = 1,
-		EAR_ACCESSORY = 2
-	}
 
 	export interface EntityMpPool<T> {
 		/**

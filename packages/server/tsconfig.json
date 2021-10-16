@@ -1,4 +1,4 @@
 {
 	"extends": "../../tsconfig.base.json",
-	"files": ["index.d.ts"]
+	"files": ["index.d.ts", "enums.d.ts", "enums/colshape.d.ts", "enums/player.d.ts", "enums/vehicle.d.ts", "enums/weather.d.ts"]
 }
