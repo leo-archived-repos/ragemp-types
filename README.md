@@ -55,7 +55,7 @@ pnpm add -D github:rysemultiplayer/ragemp-types#types-shared
 
 ## 🤓 Usage
 
-🔴 **These types need to be built using the [rollup-plugin-external-globals](https://www.npmjs.com/package/rollup-plugin-external-globals)**
+🔴 **These types must be used together with the [rollup](https://rollupjs.org/guide/en/), because you'll need the [rollup-plugin-external-globals](https://www.npmjs.com/package/rollup-plugin-external-globals) to be able to remove the module in order to run the server.**
 
 ```js
 // rollup.config.js
