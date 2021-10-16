@@ -5,8 +5,7 @@
 	"main": "index.d.ts",
 	"files": [
 		"index.d.ts",
-		"vehicle_hashes.d.ts",
-		"weapon_hashes.d.ts"
+		"vehicle_hashes.d.ts"
 	],
 	"author": "LeonardSSH <leonardssh22@gmail.com> (https://leonard.sh)",
 	"license": "MIT",

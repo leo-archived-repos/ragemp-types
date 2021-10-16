@@ -1,24 +1,10 @@
 /// <reference types="@ragemp/types-shared"/>
 /// <reference path="vehicle_hashes.d.ts" />
-/// <reference path="weapon_hashes.d.ts" />
 
 import { VehicleHash } from './vehicle_hashes';
-import { WeaponHash } from './weapon_hashes';
 
 declare module 'rage-server' {
 	import * as shared from 'rage-shared';
-
-	export const enum EntityType {
-		BLIP = 'blip',
-		CHECKPOINT = 'checkpoint',
-		COLSHAPE = 'colshape',
-		DUMMY = 'dummy',
-		MARKER = 'marker',
-		OBJECT = 'object',
-		PICKUP = 'pickup',
-		PLAYER = 'player',
-		VEHICLE = 'vehicle'
-	}
 
 	export const enum PlayerActions {
 		CLIMBING = 'climbing',
@@ -226,7 +212,7 @@ declare module 'rage-server' {
 		/**
 		 * Returns type of entity.
 		 */
-		readonly type: EntityType;
+		readonly type: shared.EntityType;
 
 		/**
 		 * This property using for setting or getting entity alpha.
