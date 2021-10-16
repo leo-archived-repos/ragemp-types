@@ -1,3 +1,7 @@
+/// <reference path="weapon_hashes.d.ts" />
+
+export * from './weapon_hashes';
+
 declare module 'rage-shared' {
 	export type Array2d = [number, number];
 	export type Array3d = [number, number, number];
@@ -116,4 +120,18 @@ declare module 'rage-shared' {
 		 */
 		unit(): Vector3Mp;
 	};
+
+	export const enum EntityType {
+		BLIP = 'blip',
+		CHECKPOINT = 'checkpoint',
+		COLSHAPE = 'colshape',
+		DUMMY = 'dummy',
+		MARKER = 'marker',
+		OBJECT = 'object',
+		PICKUP = 'pickup',
+		PLAYER = 'player',
+		VEHICLE = 'vehicle',
+		PED = 'ped',
+		TEXT_LABEL = 'textlabel'
+	}
 }
