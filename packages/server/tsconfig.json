@@ -1,4 +1,4 @@
 {
 	"extends": "../../tsconfig.base.json",
-	"files": ["index.d.ts", "vehicle_hashes.d.ts", "weapon_hashes.d.ts"]
+	"files": ["index.d.ts", "vehicle_hashes.d.ts"]
 }

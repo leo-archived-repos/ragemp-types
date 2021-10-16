@@ -7,7 +7,7 @@ importers:
       '@ragemp/types-shared': github:rysemultiplayer/ragemp-types#types-shared
       prettier: ^2.4.1
     devDependencies:
-      '@ragemp/types-shared': github.com/rysemultiplayer/ragemp-types/d74adebfa1c3440a27cd2b9f8e7a66804e8bb5c1
+      '@ragemp/types-shared': github.com/rysemultiplayer/ragemp-types/30911e0cf3284b35c80f68682de862b66164d5bc
       prettier: 2.4.1
 
   packages/server:
@@ -21,8 +21,8 @@ packages:
     hasBin: true
     dev: true
 
-  github.com/rysemultiplayer/ragemp-types/d74adebfa1c3440a27cd2b9f8e7a66804e8bb5c1:
-    resolution: {commit: d74adebfa1c3440a27cd2b9f8e7a66804e8bb5c1, repo: git+ssh://git@github.com/rysemultiplayer/ragemp-types.git, type: git}
+  github.com/rysemultiplayer/ragemp-types/30911e0cf3284b35c80f68682de862b66164d5bc:
+    resolution: {commit: 30911e0cf3284b35c80f68682de862b66164d5bc, repo: git+ssh://git@github.com/rysemultiplayer/ragemp-types.git, type: git}
     name: '@ragemp/types-shared'
     version: 1.0.0
     dev: true
