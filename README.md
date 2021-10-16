@@ -30,7 +30,7 @@ yarn add -D github:rysemultiplayer/ragemp-types#types-client
 pnpm add -D github:rysemultiplayer/ragemp-types#types-client
 ```
 
-`SHARED-MODULE`
+#### `SHARED-MODULE`
 
 ```bash
 # With npm

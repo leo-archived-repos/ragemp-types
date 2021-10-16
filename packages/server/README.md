@@ -17,7 +17,7 @@ yarn add -D github:rysemultiplayer/ragemp-types#types-server
 pnpm add -D github:rysemultiplayer/ragemp-types#types-server
 ```
 
-`SHARED-MODULE`
+#### `SHARED-MODULE`
 
 ```bash
 # With npm
