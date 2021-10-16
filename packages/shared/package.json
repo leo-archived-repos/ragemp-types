@@ -4,8 +4,7 @@
 	"description": "Shared types definitions for RAGE:MP server/client module",
 	"main": "index.d.ts",
 	"files": [
-		"index.d.ts",
-		"weapon_hashes.d.ts"
+		"index.d.ts"
 	],
 	"author": "LeonardSSH <leonardssh22@gmail.com> (https://leonard.sh)",
 	"license": "MIT"
