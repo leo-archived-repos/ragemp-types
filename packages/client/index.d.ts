@@ -9669,6 +9669,7 @@ declare module 'rage-client' {
 	export const system: SystemMp;
 	export const user: UserMp;
 	export const voiceChat: VoiceChatMp;
+	export const console: ConsoleMp;
 
 	export const Vector3: shared.Vector3Mp;
 
