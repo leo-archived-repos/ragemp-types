@@ -1,5 +1,6 @@
 /// <reference types="@ragemp/types-shared"/>
 /// <reference path="enums.d.ts"/>
+/// <reference path="natives.d.ts"/>
 
 declare module 'rage-client' {
 	import * as shared from 'rage-shared';
