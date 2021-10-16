@@ -1,7 +1,4 @@
 /// <reference types="@ragemp/types-shared"/>
-/// <reference path="vehicle_hashes.d.ts" />
-
-import { VehicleHash } from './vehicle_hashes';
 
 declare module 'rage-server' {
 	import * as shared from 'rage-shared';
@@ -1118,7 +1115,7 @@ declare module 'rage-server' {
 
 	export interface VehicleMpPool extends EntityMpPool<VehicleMp> {
 		'new'(
-			model: VehicleHash | shared.HashOrString,
+			model: shared.VehicleHash | shared.HashOrString,
 			position: shared.Vector3Mp,
 			options?: {
 				alpha?: number;
