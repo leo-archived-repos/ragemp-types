@@ -74,7 +74,7 @@ export default [
 
 ```ts
 // index.ts
-import mp from 'rage-client'; // this module will be replaced on build using rollup
+import mp, { PlayerMp } from 'rage-client'; // this module will be replaced on build using rollup
 
 interface CustomMp {
 	myMethod(player: PlayerMp): any;
