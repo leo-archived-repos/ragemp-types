@@ -85,43 +85,41 @@ export default [
 ];
 ```
 
-## Using `* star` import
-
-#### Input:
-
 ```ts
-import * as mp from 'rage-server';
+// index.ts
+import mp, { PlayerMp } from 'rage-server'; // this module will be replaced on build using rollup
 
-mp.events.add('gobrr', () => {
-	// your code
+interface CustomMp {
+	myMethod(player: PlayerMp): any;
+}
+
+declare module 'rage-server' {
+	export interface Mp {
+		custom: CustomMp;
+	}
+}
+
+mp.custom = {
+	myMethod: (player: PlayerMp) => {
+		// your code
+	}
+};
+
+mp.events.add('playerReady', (player: PlayerMp) => {
+	mp.custom.myMethod(player);
 });
 ```
-
-#### Output:
 
 ```js
-mp.events.add('gobrr', () => {
-	// your code
-});
-```
+// index.js
+mp.custom = {
+	myMethod: (player) => {
+		// your code
+	}
+};
 
-## Using `{ named }` import
-
-#### Input:
-
-```ts
-import { events, PlayerMp } from 'rage-server';
-
-events.add('gobrr', (player: PlayerMp) => {
-	// your code
-});
-```
-
-#### Output:
-
-```js
-mp.events.add('gobrr', (player) => {
-	// your code
+mp.events.add('playerReady', (player) => {
+	mp.custom.myMethod(player);
 });
 ```
 
