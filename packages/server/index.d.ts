@@ -11,6 +11,30 @@ declare module 'rage-server' {
 		name: string;
 	};
 
+	export interface Mp {
+		blips: BlipMpPool;
+		checkpoints: CheckpointMpPool;
+		colshapes: ColshapeMpPool;
+		events: EventMpPool;
+		labels: TextLabelMpPool;
+		markers: MarkerMpPool;
+		peds: PedMpPool;
+		players: PlayerMpPool;
+		objects: ObjectMpPool;
+		vehicles: VehicleMpPool;
+		world: WorldMp;
+
+		Event: {
+			new <K extends keyof IServerEvents>(eventName: K, callback: IServerEvents[K]): EventMp;
+			new (eventName: string, callback: (this: EventMpThis, ...args: any[]) => void): EventMp;
+		};
+
+		Vector3: shared.Vector3Mp;
+
+		joaat(str: string): number;
+		joaat(strs: string[]): number[];
+	}
+
 	export interface EntityMpPool<T> {
 		/**
 		 * This property is used to get the element count of a pool.
@@ -1515,19 +1539,9 @@ declare module 'rage-server' {
 		setWeatherTransition(weather: Weather | string, duration?: number): void;
 	}
 
-	export const players: PlayerMpPool;
-	export const vehicles: VehicleMpPool;
-	export const colshapes: ColshapeMpPool;
-	export const checkpoints: CheckpointMpPool;
-	export const events: EventMpPool;
-	export const blips: BlipMpPool;
-	export const labels: TextLabelMpPool;
-	export const markers: MarkerMpPool;
-	export const objects: ObjectMpPool;
-	export const peds: PedMpPool;
-	export const world: WorldMp;
+	const mp: Mp;
 
-	export const Vector3: shared.Vector3Mp;
+	export default mp;
 
 	export * from 'rage-shared';
 }
