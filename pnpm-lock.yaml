@@ -4,10 +4,12 @@ importers:
 
   .:
     specifiers:
+      '@ragemp/types-client': github:rysemultiplayer/ragemp-types#types-client
       '@ragemp/types-shared': github:rysemultiplayer/ragemp-types#types-shared
       prettier: ^2.4.1
     devDependencies:
-      '@ragemp/types-shared': github.com/rysemultiplayer/ragemp-types/3ac4f5cb629c2f09ff0b8d737fce6979cb601ee5
+      '@ragemp/types-client': github.com/rysemultiplayer/ragemp-types/92dd092a1dd3500a77e09be191e5e5a8f91a99bf_@ragemp+types-shared@1.0.0
+      '@ragemp/types-shared': github.com/rysemultiplayer/ragemp-types/0f12de771bdea2e14258573ae8f67a4118bf6ae9
       prettier: 2.4.1
 
   packages/server:
@@ -21,8 +23,19 @@ packages:
     hasBin: true
     dev: true
 
-  github.com/rysemultiplayer/ragemp-types/3ac4f5cb629c2f09ff0b8d737fce6979cb601ee5:
-    resolution: {commit: 3ac4f5cb629c2f09ff0b8d737fce6979cb601ee5, repo: git+ssh://git@github.com/rysemultiplayer/ragemp-types.git, type: git}
+  github.com/rysemultiplayer/ragemp-types/0f12de771bdea2e14258573ae8f67a4118bf6ae9:
+    resolution: {tarball: https://codeload.github.com/rysemultiplayer/ragemp-types/tar.gz/0f12de771bdea2e14258573ae8f67a4118bf6ae9}
     name: '@ragemp/types-shared'
     version: 1.0.0
+    dev: true
+
+  github.com/rysemultiplayer/ragemp-types/92dd092a1dd3500a77e09be191e5e5a8f91a99bf_@ragemp+types-shared@1.0.0:
+    resolution: {tarball: https://codeload.github.com/rysemultiplayer/ragemp-types/tar.gz/92dd092a1dd3500a77e09be191e5e5a8f91a99bf}
+    id: github.com/rysemultiplayer/ragemp-types/92dd092a1dd3500a77e09be191e5e5a8f91a99bf
+    name: '@ragemp/types-client'
+    version: 1.0.0
+    peerDependencies:
+      '@ragemp/types-shared': github:rysemultiplayer/ragemp-types#types-shared
+    dependencies:
+      '@ragemp/types-shared': github.com/rysemultiplayer/ragemp-types/0f12de771bdea2e14258573ae8f67a4118bf6ae9
     dev: true
