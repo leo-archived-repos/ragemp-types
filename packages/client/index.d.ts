@@ -8,6 +8,35 @@ declare module 'rage-client' {
 	export type Handle = number;
 	export type Hash = number;
 
+	export interface Mp {
+		blips: BlipMpPool;
+		browsers: BrowserMpPool;
+		cameras: CameraMpPool;
+		checkpoints: CheckpointMpPool;
+		colshapes: ColshapeMpPool;
+		console: ConsoleMp;
+		discord: DiscordMp;
+		dummies: DummyEntityMpPool;
+		events: EventMpPool;
+		gui: GuiMp;
+		keys: KeysMp;
+		labels: TextLabelMpPool;
+		markers: MarkerMpPool;
+		nametags: NametagsMp;
+		objects: ObjectMpPool;
+		peds: PedMpPool;
+		pickups: PickupMpPool;
+		players: PlayerMpPool;
+		raycasting: RaycastingMp;
+		storage: StorageMp;
+		system: SystemMp;
+		user: UserMp;
+		vehicles: VehicleMpPool;
+		voiceChat: VoiceChatMp;
+
+		Vector3: shared.Vector3Mp;
+	}
+
 	export interface DiscordMp {
 		/**
 		 * This function will let you set further details for the [Discord Rich Presence](https://discord.com/developers/docs/rich-presence/how-to) field for a player if they have Discord running. Each argument represents one line under the 'playing a game' section.
@@ -2670,32 +2699,9 @@ declare module 'rage-client' {
 		cleanupAndReload(p0: boolean, p1: boolean, p2: boolean): void;
 	}
 
-	export const blips: BlipMpPool;
-	export const browsers: BrowserMpPool;
-	export const cameras: CameraMpPool;
-	export const checkpoints: CheckpointMpPool;
-	export const colshapes: ColshapeMpPool;
-	export const discord: DiscordMp;
-	export const dummies: DummyEntityMpPool;
-	export const events: EventMpPool;
-	export const players: PlayerMpPool;
-	export const vehicles: VehicleMpPool;
-	export const pickups: PickupMpPool;
-	export const peds: PedMpPool;
-	export const gui: GuiMp;
-	export const keys: KeysMp;
-	export const labels: TextLabelMpPool;
-	export const markers: MarkerMpPool;
-	export const nametags: NametagsMp;
-	export const objects: ObjectMpPool;
-	export const raycasting: RaycastingMp;
-	export const storage: StorageMp;
-	export const system: SystemMp;
-	export const user: UserMp;
-	export const voiceChat: VoiceChatMp;
-	export const console: ConsoleMp;
+	const mp: Mp;
 
-	export const Vector3: shared.Vector3Mp;
+	export default mp;
 
 	export * from 'rage-shared';
 }
