@@ -30,19 +30,6 @@ yarn add -D github:rysemultiplayer/ragemp-types#types-client
 pnpm add -D github:rysemultiplayer/ragemp-types#types-client
 ```
 
-#### `NATIVES`
-
-```bash
-# With npm
-npm i --save-dev github:rysemultiplayer/ragemp-types#types-natives
-
-# With yarn
-yarn add -D github:rysemultiplayer/ragemp-types#types-natives
-
-# With pnpm
-pnpm add -D github:rysemultiplayer/ragemp-types#types-natives
-```
-
 #### `SHARED-MODULE`
 
 ```bash
@@ -91,8 +78,7 @@ export default [
 		plugins: [
 			// your plugins
 			externalGlobalsPlugin({
-				'rage-client': 'mp',
-				'rage-natives': 'mp'
+				'rage-client': 'mp'
 			})
 		]
 	}
