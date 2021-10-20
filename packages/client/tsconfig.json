@@ -1,4 +1,4 @@
 {
 	"extends": "../../tsconfig.base.json",
-	"files": ["index.d.ts"]
+	"files": ["index.d.ts", "natives.d.ts"]
 }
